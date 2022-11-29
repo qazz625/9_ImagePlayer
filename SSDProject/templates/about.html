@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>SAVImage - About</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+    
+
+    <!-- Template Main CSS File -->
+    <link href="{{url_for('static', filename='assets/css/style.css')}}" rel="stylesheet" />
+
+    <style>
+        img {
+            height: 700px;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <header id="header" class=" d-flex align-items-center navbar-expand-lg navbar-dark bg-primary">
+        <div class="container d-flex justify-content-between">
+    
+          <div class="logo">
+            <!-- Uncomment below if you prefer to use an text logo -->
+            <h1><a style = "color: whitesmoke" href="/">SAVImage</a></h1>
+            
+          </div>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="/">Home</a></li>
+              <li><a class="nav-link scrollto" href="edit">Edit</a></li>
+              <li><a style = "color: whitesmoke" class="nav-link scrollto active" href="about">About</a></li>
+              <li><a class="nav-link scrollto" href="features">Features</a></li>
+             
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header><!-- #header -->
+
+    <main id="main">
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{{url_for('static', filename='assets/img/about images/1.jpg')}}" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{{url_for('static', filename='assets/img/about images/2.jpg')}}" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{{url_for('static', filename='assets/img/about images/3.jpg')}}" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{{url_for('static', filename='assets/img/about images/4.jpg')}}" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="portfolio-info">
+                <h3>About us</h3>
+                <ul>
+                  <li><strong>Team Member 1</strong>: Arun Das</li>
+                  <li><strong>Team Member 2</strong>: Jugnu Gill</li>
+                  <li><strong>Team Member 3</strong>: Ritvik Gupta</li>
+                  <li><strong>Team Member 4</strong>: Avishek Kumar Sharma  </li>
+                  <li><strong>Project Supervisor</strong>: Charu Sharma</li>
+                  <!-- <li>
+                    <strong>Project URL</strong>:
+                    <a href="#">www.example.com</a>
+                  </li> -->
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Project description</h2>
+                <p>
+                  This project aims to fulfill everyday image editing, photo filtering demands. The image player has plenty of image editing options from simple cropping, to
+			simple color, grayscale filters, to putting cartoon hats, glasses, etc on a person's face. 
+			<br> <br>
+			The project is python and flask based, using primarily OpenCV and numpy libraries for different kinds of filters. The number and types of filters can also
+			be easily expanded into the future, to make the app even more comprehensive.
+			<br><br>
+			The design of the project has been kept simple yet elegant as there are already a number of image editing apps which sometimes overwhelm users with too much
+			clutter and repetitive functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </main>
+    <!-- End #main -->
+
+    
+
+    <!-- Vendor JS Files -->
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"> </script>
+    
+
+
+  </body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>SAVImage - Features</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+    
+
+    <!-- Template Main CSS File -->
+    <link href="{{url_for('static', filename='assets/css/style.css')}}" rel="stylesheet" />
+    <style>
+        body {
+          font-family: "Roboto", sans-serif;
+          background-color: rgb(24, 32, 24);
+          background-color: whitesmoke;
+        }
+        .card{
+            background-color:rgb(226, 231, 236);
+            border-color: rgb(22, 45, 171);
+            
+        }
+        </style>
+
+  </head>
+
+  <body>
+    <header id="header" class=" d-flex align-items-center navbar-expand-lg navbar-dark bg-primary">
+        <div class="container d-flex justify-content-between">
+    
+          <div class="logo">
+            <!-- Uncomment below if you prefer to use an text logo -->
+            <h1><a style = "color: whitesmoke" href="/">SAVIMAGE</a></h1>
+            
+          </div>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="/">Home</a></li>
+              <li><a class="nav-link scrollto" href="edit">Edit</a></li>
+              <li><a class="nav-link scrollto" href="about">About</a></li>
+              <li><a style = "color: whitesmoke" class="nav-link scrollto active" href="features">Features</a></li>
+             
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header><!-- #header -->
+
+    <main id="main">
+        
+        <div class="row">
+            <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{url_for('static', filename='assets/img/filters/contrast.png')}}" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Contrast</h5>
+                          <p class="card-text">Images having a higher contrast level generally display a greater degree of color.</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+          </div>
+          <div class="col" style="margin-top: 1.2em; margin-left: 1.2em;">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{{url_for('static', filename='assets/img/filters/hue.png')}}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Hue</h5>
+                      <p class="card-text">Hue represents the color being displayed, as found on a red-green-blue scale, color wheel or grayscale. Part of the HSV colorspace.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+      </div>
+      <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{url_for('static', filename='assets/img/filters/brightness.png')}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Brightness</h5>
+                  <p class="card-text">A measure of intensity after the image has been acquired with a digital camera</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+    </div>
+    <div class="row">
+        <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{{url_for('static', filename='assets/img/filters/value.png')}}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Value</h5>
+                      <p class="card-text">Value defines how light or dark a given color or hue can be. Part of the HSV colorspace.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+      </div>
+      <div class="col" style="margin-top: 1.2em; margin-left: 1.2em;">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{url_for('static', filename='assets/img/filters/blur.png')}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Blur</h5>
+                  <p class="card-text">A blur is a shape or area which you cannot see clearly because it has no distinct outline.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+  <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{url_for('static', filename='assets/img/filters/opacity.png')}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Opacity</h5>
+              <p class="card-text">Specifies the transparency of an element. Low opacity means you can see through the image.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+</div>
+<div class="row">
+    <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{url_for('static', filename='assets/img/filters/crop3.png')}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Crop</h5>
+                  <p class="card-text">To “crop” an image is to remove or adjust the outside edges of an image to improve framing or composition.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+  <div class="col" style="margin-top: 1.2em; margin-left: 1.2em;">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{url_for('static', filename='assets/img/filters/rotate.png')}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Rotate</h5>
+              <p class="card-text">Image rotation is a common image processing routine with applications in matching, alignment, etc</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='assets/img/filters/pencil.png')}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Pencil Sketch</h5>
+          <p class="card-text">Sketch of the image if it was made using a pencil using only black colour.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{url_for('static', filename='assets/img/filters/color pencil.png')}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Color Pencil Sketch</h5>
+                  <p class="card-text">Sketch of the image if it was made using a color pencil.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+  <div class="col" style="margin-top: 1.2em; margin-left: 1.2em;">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{url_for('static', filename='assets/img/filters/hdr.png')}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">HDR</h5>
+              <p class="card-text">High Dynamic Range increases the dynamic range. Creates an accurate representation of what you see or an artistic HD feel to the landscapes.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='assets/img/filters/grayscale.png')}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Grayscale</h5>
+          <p class="card-text">A grayscale image is one in which the only colors are shades of gray. Used in processing datasets for ML.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{url_for('static', filename='assets/img/filters/emboss.png')}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Emboss</h5>
+                  <p class="card-text">Each pixel of an image is replaced either by a highlight or a shadow, depending on light/dark boundaries.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+  <div class="col" style="margin-top: 1.2em; margin-left: 1.2em;">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{url_for('static', filename='assets/img/filters/media blur.png')}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Median Blur</h5>
+              <p class="card-text">Blur in which the central element of the image is replaced by the median of all the pixels in the kernel area.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='assets/img/filters/invert.png')}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Invert</h5>
+          <p class="card-text">Invert means flipping the colors to their opposites on the color wheel.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{url_for('static', filename='assets/img/filters/summer.png')}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Summer</h5>
+                  <p class="card-text">Filter to make it feel like summer. Can be used to make pictures of landscapes more artistic.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+  <div class="col" style="margin-top: 1.2em; margin-left: 1.2em;">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{url_for('static', filename='assets/img/filters/winter.png')}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Winter</h5>
+              <p class="card-text">Filter to make it feel like winter. Can be used to make pictures of landscapes more artistic.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="col " style="margin-top: 1.2em; margin-left: 1.2em; margin-right: 1.2em;">
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='assets/img/filters/gradient.png')}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Gradient</h5>
+          <p class="card-text">The directional change in the intensity or color in an image. A fundamental building blocks in image processing.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{url_for('static', filename='assets/img/filters/dialated.png')}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Dilation</h5>
+                  <p class="card-text">Dilation adds pixels to the boundaries of objects in an image</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+  <div class="col" style="margin-top: 1.2em; margin-left: 1.2em;">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{url_for('static', filename='assets/img/filters/AI crop.png')}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">AI Crop</h5>
+              <p class="card-text">Cropping the image using the seam carving algorithm. Crops the image by 20%.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="col " style="margin-top: 1.2em; margin-left: 1.2em; margin-right: 1.2em;">
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='assets/img/filters/AI expand.png')}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">AI Expand</h5>
+          <p class="card-text">Expanding the image using the seam carving algorithm. Expands the image by 20%.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col " style="margin-top: 1.2em; margin-left: 1.2em;">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{url_for('static', filename='assets/img/filters/dogify.png')}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Dogify</h5>
+                  <p class="card-text">A fun filter which detects a face and applies a dog filter. No change happens if there is no face.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+  <div class="col" style="margin-top: 1.2em; margin-left: 1.2em;">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{url_for('static', filename='assets/img/filters/hatify.png')}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Hatify</h5>
+              <p class="card-text">A fun filter which detects a face and applies a hat filter. No change happens if there is no face.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="col " style="margin-top: 1.2em; margin-left: 1.2em; margin-right: 1.2em;">
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='assets/img/filters/coolify.png')}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Coolify</h5>
+          <p class="card-text">A fun filter which detects a face and applies a glasses filter. No change happens if there is no face.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+    </main>
+    <!-- End #main -->
+
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+
+  </body>
+</html>
